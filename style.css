@@ -1,0 +1,83 @@
+.container{
+    padding: 20px;
+}
+
+.center{
+    text-align:center;
+}
+
+.success{
+    background-color: #91d048 !important;
+}
+
+.danger{
+    background-color: #f26456 !important;
+}
+
+.warning{
+    background-color: #fec84d !important;
+}
+
+.info{
+    background-color: #5faee0 !important;
+}
+
+.default{
+    background-color: #fefefe !important;
+}
+
+.progress-bar {
+    margin-bottom: 30px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #ebebeb;
+}
+div.progress-bar div {
+    float: left;
+    text-align: right;
+    width: 0%;
+    height: 100%;
+    border-radius: 10px;
+    background: repeating-linear-gradient(
+    -55deg,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0) 15px,
+    rgba(0, 0, 0, 0.05) 15px,
+    rgba(0, 0, 0, 0.05) 30px
+    );
+    -webkit-animation: ANIMATE 50s linear infinite;
+    animation: ANIMATE 50s linear infinite;
+}
+
+@keyframes ANIMATE {
+    from {
+        background-position: -1000px 0;
+    }
+    to { 
+        background-position: 1000px 0;
+    }
+}
+
+@-webkit-keyframes ANIMATE {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 30px;
+}
